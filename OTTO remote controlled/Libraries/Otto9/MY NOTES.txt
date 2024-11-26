@@ -1,0 +1,14 @@
+PLUS:
+
+old compiled size = 91% and 79% free memory = 420 bytes
+new compiled size = 89% and 74% free memory = 528 bytes
+
+HUMANOID:
+
+old compiled size = 90% and 89% free memory = 217 bytes
+new compiled size = 90% and 84% free memory = 325 bytes
+
+important to allow enough local variable memory for Otto
+to complete the 6 servo moves including calls into subroutines
+etc, 217 bytes causes crashes, 252 bytes is stable.
+So must allow for a minimum of 260 bytes....
